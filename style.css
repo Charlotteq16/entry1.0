@@ -1,0 +1,368 @@
+body{
+    background-color: rgb(245, 167, 193); 
+}
+
+.NEXT{
+  position: absolute;
+  right: 2%;
+  bottom: .5%;
+  font-size: larger;
+}
+
+.homepage{
+  position: absolute;
+  left: 2%;
+  bottom: .5%;
+  font-size: larger;
+}
+
+.container{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  transform: rotate(20deg);
+}
+
+  :root {
+    --badge:"M400 118.114C295.067 -78.3208 0 -20.9758 0 225.168C0 394.658 185.7 567.965 400 800C614.333 567.965 800 394.658 800 225.168C800 -21.8121 504.167 -76.8663 400 118.114Z";
+
+    --xheart: "M470.7 644.567C455.133 659.667 439.3 674.967 423.233 690.567C416.767 696.867 408.367 700 400 700C391.633 700 383.233 696.867 376.767 690.567C211.5 530.133 66.6667 396.733 66.6667 272.567C66.6667 160.967 152.733 100 241.133 100C302.167 100 362.333 128.9 400 185.433C437.5 129.167 497.833 100.3 559.033 100.3C647.333 100.3 733.333 160.8 733.333 272.567C733.333 295.267 728.533 318.233 719.633 341.633C707.133 329.6 693.033 319.2 677.7 310.8C681.467 297.7 683.333 285.033 683.333 272.567C683.333 188.567 618.9 150.3 559.033 150.3C493.4 150.3 452.233 195.467 420.4 240.1C415.7 246.667 408.1 250.567 400 250.567C391.9 250.533 384.3 246.6 379.633 240C347.867 195.1 307.467 150.033 241.133 150C208.3 150 176.567 161.533 154.133 181.667C129.633 203.6 116.667 235.067 116.667 272.567C116.667 363.833 218.2 467.3 400 643.467C411.533 632.267 422.733 621.367 433.567 610.767C444.467 623.533 456.933 634.9 470.7 644.567ZM583.333 333.333C666.133 333.333 733.333 400.533 733.333 483.333C733.333 566.133 666.133 633.333 583.333 633.333C500.533 633.333 433.333 566.133 433.333 483.333C433.333 400.533 500.533 333.333 583.333 333.333ZM606.9 483.333C606.9 483.333 628.3 461.933 642.267 447.967C648.5 441.733 648.5 430.667 642.267 424.4C636 418.167 624.933 418.167 618.7 424.4C604.733 438.367 583.333 459.767 583.333 459.767C583.333 459.767 561.933 438.367 547.967 424.4C541.733 418.167 530.667 418.167 524.4 424.4C518.167 430.667 518.167 441.733 524.4 447.967C538.367 461.933 559.767 483.333 559.767 483.333C559.767 483.333 538.367 504.733 524.4 518.7C518.167 524.933 518.167 536 524.4 542.267C530.667 548.5 541.733 548.5 547.967 542.267C561.933 528.3 583.333 506.9 583.333 506.9C583.333 506.9 604.733 528.3 618.7 542.267C624.933 548.5 636 548.5 642.267 542.267C648.5 536 648.5 524.933 642.267 518.7C628.3 504.733 606.9 483.333 606.9 483.333Z";
+  }
+
+  .frame {
+    height: 800px;
+    width: 800px;
+    position: relative;
+    clip-path: path(var(--badge));
+  }
+
+
+  .frame:hover, 
+  .frame:focus{
+    clip-path: path(var(--xheart));
+    cursor: pointer;
+  }
+
+  .xheart,
+  .heart:focus {
+    clip-path: path(var(--xheart));
+    cursor: pointer;
+  }
+
+
+  img{
+    height: 800px;
+    
+  }
+
+  .img:hover{
+    background-color: aquamarine;
+  }
+
+  .number1{
+    font-size: xx-large;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: whitesmoke;
+    border: solid rgb(208, 0, 135);
+    border-width: 5px;
+
+}
+
+
+.bw-image{
+    position:absolute;
+    left: 6.5%;
+    top: 27%;
+    height: 50%;
+}
+
+.INFO-CONTAINER{
+    width: 30%;
+    height:.5%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 20%;
+    left:6%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    border: solid;
+    border-width: 10px;
+    animation-name: AnimateBorder;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes AnimateBorder{
+    50%{ border-color:rgb(255, 198, 220);}
+    100%{border-color:rgb(208, 0, 135);}
+  }
+
+  .information{
+    width: 90%;
+    position:relative;
+    left: 5%;
+    top: 10%;
+  }
+
+
+.info-word{
+    font-size: 500%;
+    position: absolute;
+    top: 10%;
+    left:15%;
+    transition: color 0.5s ease; 
+}
+
+
+.INFO-CONTAINER:hover {
+    transition: width 3s, height 3s, opacity 2s;
+    height:58%;
+    font-size: 30px;
+    flex: 4;
+}
+
+.INFO-CONTAINER:hover .info-word {
+  color: pink;
+}
+
+.thoughts-word{
+    font-size: 500%;
+    position:absolute;
+    bottom:5%;
+    left:7%;
+}
+
+.thoughts-container{
+    width: 30%;
+    height:.5%;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom:15%;
+    left:6%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    border: solid;
+    border-width: 10px;
+    animation-name: AnimateBorder;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+.thoughts-container:hover{
+        transition: width 3s, height 3s, opacity 2s;
+        height:58%;
+        font-size: 22px; 
+}
+
+.thoughts{
+  margin: 10px;
+    width: 90%;
+    position:relative;
+    left: 5%;
+    top: 10%;
+  }
+
+.heart,
+.heart:hover,
+.heart:focus{ 
+  clip-path: path(var(--x-heart));
+}
+
+
+.btn {
+  border: none;
+  font-size: 1rem;
+  background-color: hotpink;
+  padding: 1em 2em;
+  margin: 1em;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 4px 0px grey;
+
+}
+
+#badge-btn{
+  position: absolute;
+  top: 10%;
+  right: 2%;
+}
+
+#xheart-btn{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+#text-container{
+  position: absolute;
+  top: 25%;
+  right: 18%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 75px;
+  color: white;
+}
+
+
+  /*@media screen and (max-width: 1400px){
+
+    .info-word{
+      position: absolute;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container{
+      width: 57%;
+      height: auto;
+    }
+
+    #text-container{
+      width: 57%;
+      height: auto;
+    }
+
+    .thoughts-container:hover{
+      font-size: 20px;
+    }
+
+  }*/
+
+  @media screen and (max-width: 1400px){
+
+    .info-word{
+      position: relative;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .container{
+      width: 57%;
+      height: auto;
+    }
+  
+    #text-container{
+      width: 57%;
+      height: auto;
+    }
+  
+    .thoughts-container:hover{
+      font-size: 20px;
+    }
+  
+    .info-word{
+      position: relative; /* Change absolute to relative */
+      left: 0; /* Add left property to center horizontally */
+      top: 0; /* Add top property to center vertically */
+      text-align: center; /* Center text within the container */
+    }
+  
+    .info-word,
+    .thoughts-word {
+      font-size: 3rem; /* Adjust font size as needed */
+    }
+
+    .thoughts-word{
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      top: 90%;
+      left: 35%;
+    }
+  
+    .thoughts-container,
+    .INFO-CONTAINER {
+      width: 80%; /* Adjust width as needed */
+      height: .5%;
+    }
+  
+    #text-container {
+      right: 0; /* Adjust right property to position the text container */
+      top: 10%; /* Adjust top property for vertical positioning */
+    }
+  
+    .bw-image {
+      left: 10.5%; /* Adjust left property for positioning */
+      top: 27%; /* Adjust top property for vertical positioning */
+      width: 70%;
+    }
+  
+  }
+
+  
+
+ 
+
+  @media screen and (max-width: 1200px){
+
+    .thoughts-container:hover{
+      font-size: 14px;
+    }
+
+    #text-container{
+      width: 30%;
+      height: auto;
+    }
+
+    .container{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 120%;
+      left: 40%;
+      width: 300px;
+      height:300px;
+    }
+
+    .NEXT{
+      position: absolute;
+  right: 2%;
+  bottom: -130%;
+  font-size: larger;
+    }
+
+    .homepage{
+      position: absolute;
+      left: 2%;
+      bottom: -130%;
+      font-size: larger;
+    }
+    
+  }
+
+
+
+  @media screen and (max-width :600px){
+
+    #text-container{
+      width: 2%;
+      height: auto;
+    }
+
+    .INFO-CONTAINER:hover{
+      font-size: 20px;
+    }
+
+    .thoughts-container:hover{
+      font-size: 13px;
+    }
+
+    .info-word{
+      font-size: 400%;
+    }
+
+    .thoughts-word{
+      font-size: 400%;
+      left: 20%;
+    }
+
+    .bw-image{
+      position: absolute;
+      left: 12%;
+    }
+
+  }
+
+
